@@ -2,9 +2,9 @@ name: "Publish PowerShell Module To NuGet"
 description: "Reusable action to build, tag, validate, and publish a PowerShell module to the PowerShell Gallery."
 author: "itmvha"
 
-labels:
-  - icon: 'package'  # Choose an icon relevant to your action
-  - color: 'blue'    # Choose a color that complements your action
+branding:
+  icon: 'package'  # Options include 'package', 'code', 'gear', 'cloud', etc.
+  color: 'blue'    # Supported colors include 'blue', 'green', 'purple', 'red', 'yellow', or a hex code (e.g., '#0366d6')
 
 inputs:
   psd1Path:
