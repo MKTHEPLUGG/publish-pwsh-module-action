@@ -59,6 +59,16 @@ runs:
         -Description "${{ inputs.description }}" `
         -CompanyName "${{ inputs.companyName }}" `
         -ReleaseNotes "$env:message"
+        if (Test-Path "${{ inputs.psd1Path }}") {
+          Write-Host "PDS.psd1 manifest created successfully."
+        } else {
+          Write-Error "Failed to create PDS.psd1 manifest at expected path."
+        }
+        if (Test-Path "${{ inputs.psm1Path }}") {
+          Write-Host "PDS.psm1 manifest created successfully."
+        } else {
+          Write-Error "Failed to create PDS.psm1 manifest at expected path."
+        }
       shell: powershell
 
     # Step 5: Test module manifest
