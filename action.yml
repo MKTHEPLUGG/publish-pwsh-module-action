@@ -1,4 +1,4 @@
-name: "Publish PowerShell Module"
+name: "Publish PowerShell Module To NuGet"
 description: "Reusable action to build, tag, validate, and publish a PowerShell module to the PowerShell Gallery."
 author: "itmvha"
 
